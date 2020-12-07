@@ -4,7 +4,7 @@ use regex::RegexSet;
 
 fn get_parsed_input() -> Vec<String> {
     fs::read_to_string("puzzle_input.txt")
-        .expect("Something went wrong whilereading the input file")
+        .expect("Something went wrong while reading the input file")
         .split("\n\n")      // blank line denotes end of document data
         .map(|s| s.trim().to_string())
         .filter(|s| !s.is_empty())
